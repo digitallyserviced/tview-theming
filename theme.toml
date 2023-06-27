@@ -1,0 +1,489 @@
+#:schema https://coveooss.github.io/json-schema-for-humans/examples/cases/additional_properties.json
+
+
+[FormatStrings]
+seedText = "[badgeText][::r]   [blue:gray:-] SEED [gray:#303030:-][-:-:-][badgeIcon] %[3]s %[1]s %s[-:-:-]"
+quickColorTitle = "[badgeText][::r]   [blue:gray:-] QuickColor [gray:#303030:-][-:-:-][badgeIcon] %[1]s [-:-:-]%[2]s"
+quickColorPrompt = "\n[:red:-]   [red:gray:-] [-]%[1]s [gray:green:] [green:#303030:][-:-:-]" # [:#303030:-] [badgeText][::r]   [blue:gray:-] %[1]s [gray:red:-] [-:-:-]
+seedTextTail = "[#303030:blue:-]"
+seedRoll = "[badgeText][::r] ﱬ  [blue:gray:-] ROLL [gray:red:-] #%[1]d [-:-:-][red:purple:-] [purple:#303030] [-:-:-]" # [:#303030:-]
+seedRolls = "[badgeText][::r] ﱬ  [blue:gray:-] %[2]d ROLLS [gray:red:-] %[1]d [-:-:-][red:purple:-] [white]⋯  [purple:blue:-][-:blue:-] %[3]d [blue:#303030:-]  [-:-:-]" # [:#303030:-]
+
+btnReroll = "   reroll "
+keySchemeName = "[yellow:black:]   [::r] %[1]s [-:-:-]\n[yellow:black:] %[2]s [-:-:-]"
+btnReseed = "   reseed "
+tagBadgeItem = "[badgeText][%[1]s][::r]識[%[1]s:#303030:-] %[1]s %[5]s"
+tagBadgeField = "[badgeText] [::r]識[:#303030:-] %[1]s [#303030:#505050] [:#505050][-:-:-]"
+badgeField = "[badgeText][::r]識[:#303030:-] %[1]s [#303030:#505050] [:#505050][-:-:-]"
+swatchPosInfo = "[badgeText][::r]     [blue:gray:-]% 3[1]d  [gray:pink][black:pink] % 3[2]d [-:-:-]"
+labelGroupTitle ="[badgeText][:#303030:r]   %[1]s [blue:%[3]s:-][#303030:%[3]s:]%[2]s[%[3]s][-:-:-]" 
+labelGroupHeader ="[#303030:yellow]   %[1]s [yellow:#303030:] %[2]s [#303030:-:-][-:-:-]" 
+labelAction = "[yellow:#303030:r]   %[1]s [yellow:#303030:-]"
+toolBarLabel = "[#303030:yellow:] %[2]s [yellow:#303030:-] %[1]s [#303030:lime:-][lime:#303030:-]"
+keyTablePosInfo = "[badgeText][::r]   HIGHLIGHTS [blue:gray:-] %[1]d - %[2]d of  %[3]d [gray:pink][black:pink] %[4]d [-:-:-]"
+colorInfoName = "[#303030:yellow:r]%[1]s %[2]s %[3]s[-:-:-]"
+base16ViewRows = "[#303030:yellow:r] ⅩⅥ Base16 Rows [-:-:-]"
+base16ViewColumns = "[#303030:yellow:r] ⅩⅥ Base16 Columns [-:-:-]"
+gridView = "[#303030:yellow:r] ﱖ Grid [-:-:-]"
+verticalBarsView = "[#303030:yellow:r] 冀Vertical Bars [-:-:-]"
+# panelTitle = "[badgeText]🬫[yellow:#303030] %[1]s [badgeText]🬛[-:-:-]"  #  [blue:#303030:-] 
+# 
+menuTitleMain = "[%[3]s][::r]%[1]s [:#303030:-] [%[3]s:#303030][#303030:%[3]s] [%[3]s:#303030:-] [yellow]%[2]s [%[3]s:#303030:-][%[3]s:-][-:-:-]" # "[badgeText][::r] %[1]s [blue:#303030:-] [yellow]%[2]s [%[3]s:#303030:-][:-:][-:-:-]" 
+panelTitleLeft = "[red:#303030][#303030:red] %[1]s [red:#303030:-] [yellow]%[2]s [red:#303030:-][red:#303030][-:-:-]" # "[badgeText][::r] %[1]s [blue:#303030:-] [yellow]%[2]s [red:#303030:-][-:-:-]" 
+panelTitleCenter = "[red:#303030][#303030:red] %[1]s [red:#303030:-] [yellow]%[2]s [red:#303030:-][red:#303030][-:-:-]"  # [green:gray:-][green:gray:-]
+panelTitleRight = "[red:#303030][#303030:red] %[1]s [red:#303030:-] [yellow]%[2]s [red:#303030:-][red:#303030][-:-:-]" 
+bigNum = "[%[1]s:%[2]s:b]%[3]s[-:-:-]"
+fillrArt = "[%[1]s]"
+
+colorFrameTitle = "[badgeText][::r]  [blue:#303030:-] [yellow]%[1]s [#303030:%[1]s:-]  [%[1]s:#303030]  [-:-:-]" 
+colorFrameFooterIcons = "[gray:red:-] %[1]s  [red:purple:-][#303030]  %[2]s  [purple:#303030] %[3]s  [-:-:-]"
+
+labelSymbolBase16Colorblack = "[badgeText][#f1f1f1:%[1]s:]%02[6]d[%[1]s:#303030:] [white::]%[1]s %[7]s%[5]s"
+labelSymbolBase16Color = "[badgeText][%[1]s::r][::r]%02[6]d[%[1]s:#303030:-] %[2]s %[7]s%[5]s"
+labelSymbolBase16 = "[badgeText][%[1]s::r]%02[6]d[%[1]s:#303030:bd] %[2]s %[7]s%[5]s"
+labelListItemBase16 = "[%[1]s][::r]識[%[1]s:#303030:-] %[1]s "
+heartsArt='''[%[1]s][#175a6c]🭇🭆🭑🭆🭑🬼🭇🭆🭑🭆🭑🬼[-]
+[%[1]s][#007ca9] 🭧🭓🭞🭜  🭧🭓🭞🭜 '''
+heartArt='''[%[1]s][#175a6c]🭇🭆🭑🭆🭑🬼[-]
+[%[1]s][#007ca9] 🭧🭓🭞🭜 '''
+logoArt = '''[-:-:-][#000012:]████████████████████████[#000011:#000012]▔[-:-:-]
+[#000012:]█████████[:#000012]▔[#045657:]▗[#000012:#02d4ba]▀[:#07c4a7]▀[:#09b694]▀[#085f56:#000012]▖[#000013:]▁[-:-:-][#000012:]███[:#000012]▔[-:-:-][#000012:]█████[-:-:-]
+[#000012:]███████[:#000012]▔[#000013:]▁[#016c96:#000b20]▗[#007ca9:#023843]▅[:#02eacb]▅[#0080aa:#0adfbc]▖[#0df5c2:#09d5a9]▅[#0cf5c3:#064846]▅[#0ff3c3:#021a25]▖[#000013:#000012]▁[-:-:-][#000012:]█████[:#000012]▔[-:-:-][#000012:]██[-:-:-]
+[#000012:]████[#66363a:#050214]▁[#fd8174:#0c0617]▁[#fb378e:#0c0318]▁[#fb1ea8:#0c0219]▁[#32052e:#e01b98]▎[#d02097:#006992]▋[#006b94:#01213a]▊[#000a1e:#0e2269]▎[#c07873:#112269]▐[#c07871:#0a1b27]▊[#052b34:#0ecda7]▎[#df2098:#12caa8]▐[#e41b97:#4a0b3d]▊[#fb1fa8:#0c0219]▁[#fa388c:#0c0318]▁[#fe8175:#0c0617]▁[#572d34:#040214]▁[#000012:#000012]▔▔[-:-:-][#000012:]██[-:-:-]
+[#000012:#000012]▔[-:-:-][#000012:]█[#1c0531:#000012]▕[#761395:#000013]▅[#17042c:#9a2d8c]▘[#97169e:#fd8274]▅[#6f0c96:#fc378d]▅[#4a0f96:#fc1ca6]▅[#182357:#bd1085]▅[#87116e:#062840]▘[#00273c:#00071a]▊[#000011:#132075]▎[#fc8477:#161f73]▐[#fd8476:#0b0714]▊[#0cb395:#0c091e]▅[#0ff3c4:#342751]▖[#152655:#b80f85]▅[#441e99:#fc1da6]▅[#671593:#fb388a]▅[#175a6c:#fd8274]▅[#905759:#0b2254]▘[#111c66:#000012]▅[#010218:]▏[#000012:]▔[-:-:-][#000012:]█[-:-:-]
+[#000012:]████[#0d091f:#000012]▝[#100b22:]▀[#000013:#440753]▊[#8e0a99:#040016]▀[#442272:#012338]▘[#003e4f:#002136]▘[#002135:#000617]▊[#000011:#131f75]▎[#fc8477:#161f74]▐[#fb8576:#0c0712]▊[#051b22:#0df5c3]▎[#002b3f:#0ef3c3]▐[#038586:#002438]▝[#01f0d0:#010918]▀[#06706c:#0a0119]▎[#a70d7f:#050015]▀[#6f085a:#010013]▘[#000012:#000012]▔[-:-:-][#000012:]███[-:-:-]
+[#000012:]██[:#000012]▔▔[-:-:-][#000012:]█[:#000012]▔▔[-:-:-][#000012:]█[:#001f33]▃[#000f21:#00263a]▃[#002135:#000618]▊[#0e185a:#000013]▔[#885377:#030214]▔[#c0665d:#040213]▔[#041c25:#0df5c3]▎[#001a2d:#0ff3c3]▐[#000012:#002034]▃[#000013:#000012]▕[#000012:]▔[-:-:-][#000012:]██[:#000012]▔▔[-:-:-][#000012:]██[-:-:-]
+[#000012:#000012]▔[-:-:-][#000012:]█████[:#000012]▔[-:-:-][#000012:]█[:#000012]▔[#001d30:]▐[#002135:#000617]▊[#000012:#000012]▔▔▔[#000011:#0bb997]▂[#0ef3c3:#02252b]▘[#000012:#000012]▔▔[-:-:-][#000012:]███████[-:-:-]
+[#000012:]█████████[#001b2f:#000012]▝[#00182c:]▀[#000012:]▔[-:-:-][#000012:]█████████████[-:-:-]
+[#000012:#000012]▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔[-:-:-][#000012:]█[-:-:-]
+6a]▅[#001528:#001628]▁[:#011629]▁▁▁▁▁▁▁▁[#001427:#011528]▐[-:-:-]'''
+
+lightRocker='''
+ ▁▁ ▁   ▁ ▁▁ 
+█ 🬓 █
+█ 🬌 █
+ 🭶🭶 🭶   🭶 🭶🭶
+'''
+satRocker='''
+ ▁▁ ▁   ▁ ▁▁ 
+█ 🬚 █
+█ 🬍 █
+ 🭶🭶 🭶   🭶 🭶🭶
+'''
+hueRocker='''
+ ▁▁ ▁   ▁ ▁▁ 
+█🬞🬦 █
+█🬉🬊 █
+ 🭶🭶 🭶   🭶 🭶🭶
+'''
+pasteStartupPanel = '''
+Paste the content of your clipboard now!
+'''
+startupContinuePalette = '''
+[%[3]s::r] %[1]s [-:-:-] %[2]s
+
+[detailText] Load the most recent palette worked on. [-:-:-]
+
+[detailText] This description is silly since. [-:-:-]
+
+[detailText] %[4]s [-:-:-]
+
+[#505050::b]All standard features available.[::-]
+'''
+startupBlankPalette = '''
+[%[3]s::r] %[1]s [-:-:-] %[2]s
+
+[detailText] Start with no colors just you and the abyss. [-:-:-]
+
+[detailText] Add colors manually or utilize the many nifty tools and abilities for finding colors. [-:-:-]
+
+[#505050::b]All standard features available.[::-]
+'''
+startupPastePalette = '''
+[%[3]s::r] %[1]s [-:-:-] %[2]s
+
+[detailText] Paste any content from your clipboard and find all [white:#c55c55:b]#C55C55[-:-][detailText] colors. [-:-:-]
+
+[detailText] Should support [red]bracketed paste [fuchsia]OSC 52 [yellow]simple paste [-:-:-]
+
+[#505050::b]All standard features available.[::-]
+'''
+startupRandomPalette = '''
+[%[3]s::r] %[1]s [-:-:-] %[2]s
+
+[detailText] Start with diverse set of colors that probably doesn't match! [-:-:-]
+
+[detailText] Roll the dice and find some colors to begin your [teal]palettic[blue] adventure with. Begin with [pink]ugly[blue] and [olive]shape[blue] them to a [fuchsia]beautiful[blue] [white]gradient[blue] for your needs![-:-:-]
+
+[#505050::b]All standard features available.[::-]
+'''
+startupScriptedPalette = '''
+[%[3]s::r] %[1]s [-:-:-] %[2]s
+
+[detailText] Code your way to colorvana, using simple JS and popular colr, chroma, and other libraries. [-:-:-]
+
+[#505050::b]All standard features available.[::-]
+'''
+startupPluginPalette = '''
+[%[3]s::r] %[1]s [-:-:-] %[2]s
+
+[detailText] Use a plugin's startup features. [-:-:-]
+
+[#505050::b][yellow]Some[#505050] standard features available.[::-]
+'''
+startupQueryPalette = '''
+[%[3]s::r] %[1]s [-:-:-] %[2]s
+
+[detailText] Query your terminal's palette with OSC 4 to get the base 16 indexed colors and OSC 10-19 for cursor, selection, and mouse colors. [#505050::b]( ^]4?? ). [-:-:-]
+
+[detailText] Does not support any terminal multiplexer/pseudo-terminal other than [red::i]tmux[-:-:-]
+
+[detailText] Must have tmux [red::i]allow-passthrough on[-:-:-] 
+
+[#505050::b]All standard features available.[::-]
+'''
+startupLoadPalette = '''
+[%[3]s::r] %[1]s [-:-:-] %[2]s
+
+[detailText] Continue a previous session. [-:-:-]
+
+[#505050::b][red]Most[#505050] standard features available.[::-]
+'''
+
+
+badgeThreeLineField = '''[badgeText]       [#303030:-] [:#505050]
+[badgeText] [::r]%[1]s [:#303030:-] [#303030:-] [:#505050]
+[badgeText]     [#303030:-] [:#505050]'''
+
+newFunctionTemplate = '''
+function %s(){
+  for (var i = 0; i < 16; i++) {
+    var col = chroma.hcl(
+      seed.InRange(1, 360),
+      seed.InRange(20,70),
+      seed.InRange(20,50)
+    );
+    data.push(col.hex());
+  }
+}
+'''
+
+functionCallerTemplate = '''function userFunction(_,chroma,husl,hsluv,helpers,$,seed){
+  %s
+  return %s()
+}
+callUserFn(userFunction)
+'''
+
+[TagStyles]
+
+  [TagStyles.fuzzMatched]
+    Attributes = "b"
+    BG = "#303030"
+    FG = "magenta"
+
+  [TagStyles.action]
+    Attributes = "b"
+    BG = "yellow"
+    FG = "red"
+
+  [TagStyles.background]
+    Attributes = "r"
+    BG = "#303030"
+    FG = "white"
+
+  [TagStyles.badgeIcon]
+    Attributes = ""
+    BG = "#505050"
+    FG = "yellow"
+
+  [TagStyles.oscIdx]
+    Attributes = ""
+    BG = ""
+    FG = "red"
+
+  [TagStyles.detailText]
+    Attributes = ""
+    BG = ""
+    FG = "blue"
+
+  [TagStyles.badgeText]
+    Attributes = ""
+    BG = "#313131"
+    FG = "blue"
+
+  [TagStyles.baseColorTagaqua]
+    Attributes = "r"
+    BG = ""
+    FG = "aqua"
+
+  [TagStyles.baseColorTagblack]
+    Attributes = "r"
+    BG = ""
+    FG = "black"
+
+  [TagStyles.baseColorTagblue]
+    Attributes = "r"
+    BG = ""
+    FG = "blue"
+
+  [TagStyles.baseColorTagfuchsia]
+    Attributes = "r"
+    BG = ""
+    FG = "fuchsia"
+
+  [TagStyles.baseColorTaggray]
+    Attributes = "r"
+    BG = "#000000"
+    FG = "gray"
+
+  [TagStyles.baseColorTaggreen]
+    Attributes = "r"
+    BG = ""
+    FG = "green"
+
+  [TagStyles.baseColorTaglime]
+    Attributes = "r"
+    BG = ""
+    FG = "lime"
+
+  [TagStyles.baseColorTagmaroon]
+    Attributes = "r"
+    BG = ""
+    FG = "maroon"
+
+  [TagStyles.baseColorTagnavy]
+    Attributes = "r"
+    BG = ""
+    FG = "navy"
+
+  [TagStyles.baseColorTagolive]
+    Attributes = "r"
+    BG = ""
+    FG = "olive"
+
+  [TagStyles.baseColorTagpurple]
+    Attributes = "r"
+    BG = ""
+    FG = "purple"
+
+  [TagStyles.baseColorTagred]
+    Attributes = "r"
+    BG = ""
+    FG = "red"
+
+  [TagStyles.baseColorTagsilver]
+    Attributes = "r"
+    BG = ""
+    FG = "silver"
+
+  [TagStyles.baseColorTagteal]
+    Attributes = "r"
+    BG = ""
+    FG = "teal"
+
+  [TagStyles.baseColorTagwhite]
+    Attributes = "r"
+    BG = ""
+    FG = "white"
+
+  [TagStyles.baseColorTagyellow]
+    Attributes = "r"
+    BG = ""
+    FG = "yellow"
+
+  [TagStyles.consoleIcon]
+    Attributes = ""
+    BG = "#303030"
+    FG = "blue"
+
+  [TagStyles.consoleMsg]
+    Attributes = "r"
+    BG = "black"
+    FG = "blue"
+
+  [TagStyles.consoleMsgDebug]
+    Attributes = "r"
+    BG = "black"
+    FG = "pink"
+
+  [TagStyles.consoleMsgErr]
+    Attributes = "r"
+    BG = "black"
+    FG = "red"
+
+  [TagStyles.consoleMsgPlugin]
+    Attributes = "r"
+    BG = "black"
+    FG = "green"
+
+  [TagStyles.consoleMsgPluginErr]
+    Attributes = "r"
+    BG = "black"
+    FG = "red"
+
+  [TagStyles.consoleMsgWarn]
+    Attributes = "r"
+    BG = "black"
+    FG = "yellow"
+
+  [TagStyles.cursor]
+    Attributes = ""
+    BG = ""
+    FG = "orange"
+
+  [TagStyles.fieldInput]
+    Attributes = ""
+    BG = "#303030"
+    FG = "green"
+
+  [TagStyles.fieldPlaceholder]
+    Attributes = ""
+    BG = "red"
+    FG = "#303030"
+
+  [TagStyles.fieldIcon]
+    Attributes = ""
+    BG = "pink"
+    FG = "#303030"
+
+  [TagStyles.fieldLabel]
+    Attributes = ""
+    BG = "blue"
+    FG = "#303030"
+
+  [TagStyles.foreground]
+    Attributes = ""
+    BG = ""
+    FG = "white"
+
+  [TagStyles.input_autocomplete]
+    Attributes = ""
+    BG = "#373e48"
+    FG = "red"
+
+  [TagStyles.input_field]
+    Attributes = ""
+    BG = "#373e48"
+    FG = "blue"
+
+  [TagStyles.input_placeholder]
+    Attributes = ""
+    BG = "#2c3139"
+    FG = "yellow"
+
+  [TagStyles.list_main]
+    Attributes = ""
+    BG = ""
+    FG = "green"
+
+  [TagStyles.list_second]
+    Attributes = ""
+    BG = ""
+    FG = "blue"
+
+  [TagStyles.paletteTagsIcon]
+    Attributes = ""
+    BG = "#5c6370"
+    FG = "yellow"
+
+  [TagStyles.paletteTagsInfo]
+    Attributes = ""
+    BG = "yellow"
+    FG = "black"
+
+  [TagStyles.palette_name]
+    Attributes = "b"
+    BG = "red"
+    FG = "white"
+
+  [TagStyles.qcStatusInfo]
+    Attributes = "b"
+    BG = "black"
+    FG = "green"
+
+  [TagStyles.scriptConsoleErr]
+    Attributes = "r"
+    BG = "black"
+    FG = "red"
+
+  [TagStyles.scriptConsoleMsg]
+    Attributes = "r"
+    BG = "black"
+    FG = "green"
+
+  [TagStyles.shortcut]
+    Attributes = ""
+    BG = "#343434"
+    FG = ""
+
+  [TagStyles.shortcutAction]
+    Attributes = ""
+    BG = "#343434"
+    FG = "yellow"
+
+  [TagStyles.shortcutIcon]
+    Attributes = ""
+    BG = "#343434"
+    FG = "teal"
+
+  [TagStyles.shortcutKey]
+    Attributes = ""
+    BG = "#343434"
+    FG = "red"
+
+  [TagStyles.shortcutKeys]
+    Attributes = ""
+    BG = "#343434"
+    FG = ""
+
+  [TagStyles.shortcutLink]
+    Attributes = ""
+    BG = "red"
+    FG = "teal"
+
+  [TagStyles.shortcutModifier]
+    Attributes = ""
+    BG = "teal"
+    FG = "#343434"
+
+  [TagStyles.tblSortAsc]
+    Attributes = "rb"
+    BG = "black"
+    FG = "blue"
+
+  [TagStyles.tblSortDesc]
+    Attributes = "rb"
+    BG = "black"
+    FG = "yellow"
+
+  [TagStyles.titleIcon]
+    Attributes = ""
+    BG = "red"
+    FG = "#343434"
+
+  [TagStyles.titleText]
+    Attributes = ""
+    BG = "#343434"
+    FG = "red"
+  [TagStyles.gridMarked]
+    Attributes = ""
+    FG = "#F2812F"
+    BG = "#212121"
+  [TagStyles.buttonSelection]
+    Attributes = ""
+    FG = "#f0f0f0"
+    BG = "#212121"
+  [TagStyles.gridSelection]
+    Attributes = ""
+    FG = "#f0f0f0"
+    BG = "#212121"
+# version = 2
+# seedRolls = "[badgeText][::r] %[2]d ﱬ  ROLLS [-:-:-][badgeIcon][::r] [yellow:purple:-] [purple:blue:-][-:blue:-] %[1]d [blue:pink:-] #%[3]d [-:-:-]" # [:#303030:-]
+# tagBadgeItem = "[badgeText][%[1]s][::r]識[%[1]s:#303030:-] %[1]s [#303030:pink] %[2]d [pink][-:-:-]"
+# ﱖ 𤋮冀
+# labelSymbolBase16maroon = "[badgeText][%[1]s][::r]𝟏𝟔[%[1]s:#303030:-] %[1]s %[5]s"
+# labelSymbolBase16green =  "[badgeText][%[1]s][::r]𝟙𝟞[%[1]s:#303030:-] %[1]s %[5]s"
+# labelSymbolBase16olive =  "[badgeText][%[1]s][::r]𝟣𝟨[%[1]s:#303030:-] %[1]s %[5]s"
+# labelSymbolBase16navy =   "[badgeText][%[1]s][::r]𝟭𝟲[%[1]s:#303030:-] %[1]s %[5]s"
+# labelSymbolBase16teal =   "[badgeText][%[1]s][::r]𝟷𝟼[%[1]s:#303030:-] %[1]s %[5]s"
